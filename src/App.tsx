@@ -2,7 +2,7 @@ import './App.css'
 
 import {Counter} from "./components/Counter.tsx";
 import {Settings} from "./components/Settings.tsx";
-import { Wrapper } from './components/Wrapper.tsx';
+import {Wrapper} from './components/Wrapper.tsx';
 import {useEffect, useState} from "react";
 
 function App() {
@@ -29,7 +29,6 @@ function App() {
     }, []);
 
 
-
     return (
         <div className="app">
             <Wrapper className="appContainer">
@@ -38,7 +37,8 @@ function App() {
                           setStartValue={setStartValue}
                           setMaxValue={setMaxValue}
                           setCount={setCount}
-                          setValuesAreSet={setValuesAreSet}/>
+                          setValuesAreSet={setValuesAreSet}
+                          valuesAreSet={valuesAreSet}/>
                 <Counter count={count}
                          setCount={setCount}
                          maxValue={maxValue}
